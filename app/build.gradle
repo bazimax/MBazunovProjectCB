@@ -36,9 +36,6 @@ android {
 }
 
 dependencies {
-    //implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0' //LiveData - ViewModel
-    //implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.1' //flow + room
-
     implementation 'androidx.core:core-ktx:1.8.0' //base
     implementation 'androidx.appcompat:appcompat:1.6.1' //base
     implementation 'com.google.android.material:material:1.5.0' //base
