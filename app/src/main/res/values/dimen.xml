@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--My Cocktails-->
+    <dimen name="cardCornerRadius">64dp</dimen>
+    <dimen name="cardText">26sp</dimen>
+    <dimen name="textMain">36sp</dimen>
+    <dimen name="textInfo">16sp</dimen>
+
+    <!--Button-->
+    <dimen name="button">24sp</dimen>
+
+    <!--Cocktail create/change-->
+    <dimen name="textCreateTitle">32sp</dimen>
+    <dimen name="textCreateDescription">16sp</dimen>
+    <dimen name="textCreateIngredients">16sp</dimen>
+    <dimen name="textCreateRecipeTitle">14sp</dimen>
+    <dimen name="textCreateRecipeContent">14sp</dimen>
+    <dimen name="textCreateOptional">12sp</dimen>
+
+    <dimen name="cornerEditText">26dp</dimen>
+    <dimen name="marginTopEditText">16dp</dimen>
+
+    <!--Cocktail detail-->
+    <dimen name="textDetailTitle">32sp</dimen>
+    <dimen name="textDetailDescription">16sp</dimen>
+    <dimen name="textDetailIngredients">16sp</dimen>
+    <dimen name="textDetailRecipeTitle">14sp</dimen>
+    <dimen name="textDetailRecipeContent">14sp</dimen>
+
+</resources>

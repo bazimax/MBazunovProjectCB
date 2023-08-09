@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--My Cocktails-->
+    <color name="fontMain">#313131</color>
+    <color name="fontInfo">#79747E</color>
+    <color name="colorAccent">#4B97FF</color>
+    <color name="colorError">#FF0000</color>
+</resources>

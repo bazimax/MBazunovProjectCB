@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.CreateCocktail">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="0.8"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="216dp"
+                    android:layout_height="204dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="64dp"
+                    app:cardCornerRadius="54dp">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="216dp"
+                        android:layout_height="204dp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/placeholder" />
+                </androidx.cardview.widget.CardView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    app:boxCornerRadiusBottomEnd="@dimen/cornerEditText"
+                    app:boxCornerRadiusBottomStart="@dimen/cornerEditText"
+                    app:boxCornerRadiusTopEnd="@dimen/cornerEditText"
+                    app:boxCornerRadiusTopStart="@dimen/cornerEditText">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInputTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/cocktailCreateTitle" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textViewErrorTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/didactgothic_regular"
+                    android:text="@string/addTitle"
+                    android:textColor="@color/colorError"
+                    android:textSize="@dimen/textCreateOptional"
+                    android:visibility="gone" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTopEditText"
+                    app:boxCornerRadiusBottomEnd="@dimen/cornerEditText"
+                    app:boxCornerRadiusBottomStart="@dimen/cornerEditText"
+                    app:boxCornerRadiusTopEnd="@dimen/cornerEditText"
+                    app:boxCornerRadiusTopStart="@dimen/cornerEditText">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInputDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/cocktailCreateDescription" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textViewOptional"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/didactgothic_regular"
+                    android:text="@string/optional"
+                    android:textSize="@dimen/textCreateOptional" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTopEditText"
+                    app:boxCornerRadiusBottomEnd="@dimen/cornerEditText"
+                    app:boxCornerRadiusBottomStart="@dimen/cornerEditText"
+                    app:boxCornerRadiusTopEnd="@dimen/cornerEditText"
+                    app:boxCornerRadiusTopStart="@dimen/cornerEditText">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInputIngredients"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/cocktailCreateIngredients" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textViewErrorIngridients"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/didactgothic_regular"
+                    android:text="@string/addIngredients"
+                    android:textColor="@color/colorError"
+                    android:textSize="@dimen/textCreateOptional"
+                    android:visibility="gone" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTopEditText"
+                    app:boxCornerRadiusBottomEnd="@dimen/cornerEditText"
+                    app:boxCornerRadiusBottomStart="@dimen/cornerEditText"
+                    app:boxCornerRadiusTopEnd="@dimen/cornerEditText"
+                    app:boxCornerRadiusTopStart="@dimen/cornerEditText">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInputRecipe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/cocktailCreateRecipe" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textViewOptional2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/didactgothic_regular"
+                    android:text="@string/optional"
+                    android:textSize="@dimen/textCreateOptional" />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/buttonCreateCocktailSave"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/colorAccent"
+            android:fontFamily="@font/didactgothic_regular"
+            android:text="@string/cocktailCreateButtonSave"
+            android:textSize="@dimen/button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/buttonCreateCocktailCancel"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/fontInfo"
+            android:fontFamily="@font/didactgothic_regular"
+            android:text="@string/cocktailCreateButtonCancel"
+            android:textSize="@dimen/button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
