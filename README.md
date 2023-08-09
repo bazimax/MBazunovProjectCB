@@ -39,3 +39,12 @@
 ##### Дополнительные задачи
 - удаление коктейля (без всплывашки)
 - есть заготовка к обновление, но и так уже потратил слишком много времени
+
+***
+
+## Preview
+
+<img src="myCocktailsEmpty.png" width="250" /> <img src="all.gif" width="250" /> 
+
+<img src="myCocktails.png" width="250" /> <img src="cocktailDetail.png" width="250" /> <img src="createCocktail.png" width="250" />
+
